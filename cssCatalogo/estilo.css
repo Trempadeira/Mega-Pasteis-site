@@ -1,0 +1,457 @@
+    * {
+        margin: 0;
+        border: 0;
+        padding: 0
+    }
+    
+    html {
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+    }
+    
+    header {
+        background-color: rgb(255, 0, 0);
+        color: #fff;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+    
+    h3 {
+        font-size: 3rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 0;
+        padding: 5px;
+    }
+    
+    h4 {
+        font-size: 1.6rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 0;
+        padding-left: 5px;
+        padding-bottom: 5px;
+    }
+    
+    body {
+        background-color: rgb(255, 255, 224);
+    }
+    
+    .container {
+        background-color: rgba(252, 245, 245, 0.8);
+        width: 80%;
+        box-shadow: 2px 2px 10px rgb(238, 228, 141);
+        margin-top: 0px;
+        margin: 0 auto;
+        max-width: 90%;
+        max-height: 90%;
+        min-width: 0;
+        min-height: 0;
+        margin-top: 60px;
+    }
+    
+    footer {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #fff;
+        background-color: rgb(255, 0, 0);
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    p {
+        font-family: arial;
+        text-align: justify;
+        padding: 10px;
+        font-size: 1.6rem;
+    }
+    
+    .cardapio p {
+        font-family: arial;
+        text-align: justify;
+        padding: 10px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    h1 {
+        font-family: arial;
+        text-align: center;
+        padding-top: 5px;
+        padding-left: 5px;
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-family: arial;
+        text-align: center;
+        padding-top: 5px;
+        padding-left: 10px;
+        font-size: 2rem;
+        color: rgb(255, 0, 0);
+        text-shadow: 1px 1px #000
+    }
+    
+    .opçoes {
+        font-family: arial;
+        text-align: center;
+        padding-top: 5px;
+        padding-left: 10px;
+        font-size: 2rem;
+        color: rgb(255, 0, 0);
+        text-shadow: 1px 1px #000
+    }
+    
+    .pastel-grid {
+        width: 8rem;
+        height: 5rem;
+        border-radius: 20%;
+        position: absolute;
+    }
+    
+    .texto-footer {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 10px;
+        font-size: 1.6rem;
+        padding-bottom: 10px;
+    }
+    
+    .compre {
+        background-color: rgba(255, 255, 0, 0.9);
+        width: 18rem;
+        height: 15rem;
+        position: fixed;
+        right: 0;
+        text-align: center;
+        margin-top: 3%;
+        z-index: 1;
+        border: solid #fff;
+        border-radius: 30px;
+        border: solid #fff;
+        padding-bottom: 5px;
+    }
+    
+    @media(min-width: 320px) and (max-width: 450px) {
+        .compre {
+            background-color: rgba(255, 255, 0, 0.9);
+            width: 35%;
+            height: 13rem;
+            position: fixed;
+            right: 0;
+            text-align: center;
+            margin-top: 3%;
+            z-index: 1;
+            border: solid #fff;
+            border-radius: 30px;
+            border: solid #fff;
+            padding-bottom: 5px;
+        }
+    }
+    
+    .comprar {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 5px;
+        color: #FFF;
+        background-color: rgb(0, 255, 0);
+        border: solid;
+        font-size: 2rem;
+        border-radius: 20px;
+        width: 90%;
+    }
+    
+    .comprar:hover {
+        background-color: #2fac35;
+    }
+    
+    h5 {
+        font-family: arial;
+        text-align: center;
+        padding-top: 1px;
+        font-size: 1.9rem;
+    }
+    
+    h6 {
+        font-family: arial;
+        text-align: center;
+        padding-top: 5px;
+        padding-left: 10px;
+        font-size: 1.7rem;
+        color: #fff;
+    }
+    
+    .grid-container {
+        margin-top: 5px;
+        background-color: rgba(252, 245, 245, 0.8);
+        padding: 5px;
+    }
+    
+    .cardapio {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 10px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .cardapio div {
+        background-color: #fff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: center;
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 2px;
+        padding-bottom: 10px;
+    }
+    
+    #formulario {
+        background-color: rgba(252, 245, 245, 0.8);
+    }
+    
+    .formulario-contato {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.8rem;
+        padding: 10px;
+        text-align: left;
+        margin-left: 5%;
+        color: #000;
+    }
+    
+    input {
+        font-family: sans-serif;
+        font-size: 1.7rem;
+        padding: 5px;
+        color: #000;
+        background-color: #FFF;
+    }
+    
+    nav {
+        position: relative;
+        left: 19px;
+        margin-top: 10px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.6rem;
+        margin-right: 2%;
+        word-spacing: 10px;
+    }
+    
+    @media (min-width: 320px) and (max-width: 450px) {
+        nav {
+            position: relative;
+            left: 10px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.6rem;
+            margin-right: 2%;
+            word-spacing: 15px;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 1.0);
+        transition: all 500ms ease-in-out;
+    }
+    
+    a:hover {
+        color: rgba(255, 255, 0);
+    }
+    
+    #enviar {
+        background-color: rgba(144, 238, 144, 1.0);
+        border-radius: 10%;
+        box-shadow: 3px 3px #000;
+    }
+    
+    #limpar {
+        background-color: rgba(178, 34, 34, 1.0);
+        border-radius: 10%;
+        box-shadow: 3px 3px #000;
+    }
+    
+    .cardapio img {
+        width: 24rem;
+        height: 14.5rem;
+        border-radius: 20%;
+    }
+    
+    @media (min-width: 320px) and (max-width: 450px) {
+        .cardapio img {
+            width: 24rem;
+            height: 14.5rem;
+            border-radius: 20%;
+        }
+    }
+    
+    .text-grid {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.8rem;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .link-grid {
+        font-weight: bold;
+        font-size: 1.8rem;
+        background-color: #000;
+        border-radius: 20px;
+        padding: 5px;
+    }
+    
+    .title {
+        font-family: arial;
+        text-align: center;
+        padding-top: 1px;
+        font-size: 1.9rem;
+    }
+    
+    .car {
+        width: 26rem;
+        height: 26rem;
+        border-radius: 50%;
+    }
+    
+    .img-car {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50px;
+        box-shadow: 3px 3px 3px #000;
+    }
+    
+    .numero {
+        position: fixed;
+        top: 135px;
+        right: 41px;
+        width: 25px;
+        height: 25px;
+        border-radius: 60%;
+        background-color: rgb(238, 238, 238);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        z-index: 1;
+        padding: 1px;
+    }
+    
+    @media (min-width: 320px) and (max-width: 450px) {
+        .numero {
+            position: fixed;
+            top: 120px;
+            right: 2px;
+            width: 25px;
+            height: 25px;
+            border-radius: 60%;
+            background-color: rgb(238, 238, 238);
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            z-index: 1;
+            padding: 0.01px;
+        }
+    }
+    
+    .img-car:hover {
+        transform: scale(1.1);
+        border: solid rgba(255, 255, 255, 1.0);
+        box-shadow: 1px 1px 3px #000;
+    }
+    
+    @media (min-width: 320px) and (max-width: 450px) {
+        .img-car {
+            width: 6.5rem;
+            height: 6.5rem;
+            border-radius: 50%;
+        }
+    }
+    
+    .janela-car {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000e7;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+    }
+    
+    .carrin {
+        width: 60%;
+        min-width: 450px;
+        min-height: 200px;
+        position: relative;
+        top: 250px;
+        left: 270px;
+        background-color: #ffffff7e;
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 50px;
+    }
+    
+    @media (min-width: 320px) and (max-width: 450px) {
+        .carrin {
+            width: 20%;
+            min-width: 225px;
+            min-height: 160px;
+            position: relative;
+            top: 250px;
+            left: 20px;
+            background-color: #ffffff7e;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 50px;
+        }
+    }
+    
+    .fechar {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 0;
+        background-color: red;
+        color: white;
+        font-size: 23.5px;
+        text-align: center;
+        padding: 1px;
+        cursor: pointer;
+    }
+    
+    #carrinho {
+        background-color: none;
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        text-align: center;
+        margin-top: 3%;
+        border-radius: 80%;
+        z-index: 1;
+        padding-bottom: 5px;
+        border: 0;
+        cursor: pointer;
+    }
+    
+    @media (min-width: 320px) and (max-width: 450px) {
+        #carrinho {
+            width: 18rem;
+            height: 15rem;
+            display: inline;
+            position: fixed;
+            top: 40px;
+            right: -60px;
+            text-align: center;
+            margin-top: 3%;
+            z-index: 1;
+            border-radius: 30px;
+            padding-bottom: 5px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    }
